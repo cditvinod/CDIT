@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/StyleSheet2.css" rel="stylesheet" />
+    <script src="../engine1/jquery.js"></script>
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/StyleSheet.css" rel="stylesheet" />
+    <link href="../css/fontasom.css" rel="stylesheet" />
+
+    <link href="../engine1/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div style="float: right; background-color: #533c2c; width: 100%; height: 40px">
+                <a style="color: white; vertical-align: middle">&nbsp;Welcome&nbsp;<asp:Label ID="txtname" runat="server" Style="font-weight: 500; font-size: 19px" Text=""></asp:Label></a> <a href="logout.aspx" style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Logout</span>&nbsp;</a><%-- <a href="login.aspx" style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">My Account</span>&nbsp;</a>--%><%--<a href="#" style="color: #fff; vertical-align: middle; float: right; font-size: 20px; text-decoration: none"><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Tea Cart&nbsp;(0)</span>&nbsp;&nbsp;&nbsp;</a>--%>
+            </div>
+            <table style="margin: auto; width: 100%">
+                <tr>
+                    <td style="width: 500px">
+                        <img src="../img/logoH copy.png" height="210" width="230" class="img-fluid" /></td>
+                    <%--<td>
+                        
+                </td>--%>
+                    <td>
+                        <i class="fa fa-phone" aria-hidden="true" style="float: right">&nbsp;+91 9162927965&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i><br />
+                        <i class="fa fa-envelope" aria-hidden="true" style="float: right; font-size: 18px">&nbsp;thechaidhaba@gmail.com</i>
+                    </td>
+                </tr>
+            </table>
+            <nav style="background-color: #d35400">
+                <ul>
+                    <li>
+                        <a href="Dashboard.aspx" style="color: white">Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea_upload.aspx" style="color: white">Tea uload
+                        </a></li>
+                    <%--<a href="#"  style="color:white"><li>Project</li></a>--%>
+                    <a href="Customers.aspx" style="color: white">
+                        <li>Customers</li>
+                    </a>
+                    <a href="OrderList.aspx" style="color: white">
+                        <li>Orders</li>
+                    </a>
+                    <a href="Inventory.aspx" style="color: white">
+                        <li>Inventory</li>
+                    </a>
+                    <a href="Expenditure.aspx" style="color: white">
+                        <li>Expenditure</li>
+                    </a>
+                    <a href="Report.aspx" style="color: white">
+                        <li>Report</li>
+                    </a>
+                </ul>
+                <div class="handle" style="background-color: #533c2c">
+                    <p class="menu">Menu</p>
+                    <div class="menu_icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-6 col-md-3">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-links">
+                                <li><a href="#">Order Tea</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Preparation</a></li>
+                                <li><a href="#">Tea Type</a></li>
+                                <li><a href="#">Why us ?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <h6>Address</h6>
+                            <%-- <ul class="footer-links">
+              <li><a href="#">C</a></li>
+              <li><a href="#">UI Design</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Templates</a></li>
+            </ul>--%>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Sector-4, Bokaro, Jharkhand</p>
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p class="copyright-text">
+                                Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">TheChaiDhaba</a>.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <ul class="social-icons">
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="dribbble" href="#"><i class="fa fa-youtube"></i></a></li>
+                                <%--<li><a class="linkedin" href="#"><i class="fa fa-youtube"></i></a></li> --%>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
