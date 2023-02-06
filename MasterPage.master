@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/StyleSheet2.css" rel="stylesheet" />
+    <script src="engine1/jquery.js"></script>
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link href="css/fontasom.css" rel="stylesheet" />
+    <link href="engine1/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div style="float: right; background-color: #533c2c; width: 100%; height: 40px">
+
+                <a href="cart.aspx" style="color: #fff; vertical-align: middle; float: right; font-size: 20px; text-decoration: none"><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;
+                    <span style="font-size: 16px">Tea Cart&nbsp;(<asp:Label ID="txtCart" runat="server" Text=""></asp:Label>)</span>&nbsp;&nbsp;&nbsp;
+                </a>
+
+                <asp:LinkButton ID="btnProfile" runat="server" OnClick="btnProfile_Click" Style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Profile</span>&nbsp;</asp:LinkButton>                
+                <asp:LinkButton ID="btnOrders" runat="server" OnClick="btnOrders_Click" Style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Orders</span>&nbsp;</asp:LinkButton>
+                <asp:LinkButton ID="btnChangePassword" runat="server" OnClick="btnChangePassword_Click" Style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Change Password</span>&nbsp;</asp:LinkButton>
+
+                <asp:LinkButton ID="btnLogin" runat="server" OnClick="btnLogin_Click" Style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Login/Signup</span>&nbsp;</asp:LinkButton>
+                <asp:LinkButton ID="btnLogout" OnClick="btnLogout_Click" runat="server" Style="color: #fff; vertical-align: middle; float: right; font-size: 21px; text-decoration: none"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<span style="font-size: 16px">Logout</span>&nbsp; </asp:LinkButton>
+                <span class="text-white">Welcome
+                    <asp:Label ID="lblName" runat="server"></asp:Label>
+                    <asp:Label ID="lblWelcome" runat="server" Text="to Chai Dhaba!"></asp:Label>
+                </span>
+            </div>
+
+            <table style="margin: auto; width: 100%">
+                <tr>
+                    <td style="width: 500px">
+                        <img src="img/logoH copy.png" height="210" width="230" class="img-fluid" />
+                    </td>
+                    <td>
+                        <i class="fa fa-phone" aria-hidden="true" style="float: right">&nbsp;+91 7004701320&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i><br />
+                        <i class="fa fa-envelope" aria-hidden="true" style="float: right; font-size: 18px">&nbsp;thechaidhaba@gmail.com</i>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Start WOWSlider.com BODY section -->
+
+
+            <div id="wowslider-container1">
+                <div class="ws_images">
+                    <ul>
+                        <li>
+                            <img src="data1/images/banner1.jpg" alt="Mind opening tea not Today,Everyday" title="Mind opening tea not Today,Everyday" id="wows1_0" /></li>
+                        <li>
+                            <img src="data1/images/r.jpg" alt="Exceptional Aroma.Exceptional Tea" title="Exceptional Aroma.Exceptional Tea" id="wows1_1" /></li>
+                        <li>
+                            <img src="data1/images/gp14umpreview__copy.jpg" alt="html5 slideshow" title="Join the Tea test." id="wows1_2" /></li>
+                        <li>
+                            <img src="data1/images/pentagonbusinessgroup43198918975cd15.jpg" alt="It’s not a Tea ,It’s refreshing burst" title="It’s not a Tea ,It’s refreshing burst" id="wows1_3" /></li>
+                    </ul>
+                </div>
+                <div class="ws_bullets">
+                    <div>
+                        <a href="#" title="Mind opening tea not Today,Everyday"><span>
+                            <img src="data1/tooltips/banner1.jpg" alt="Mind opening tea not Today,Everyday" />1</span></a>
+                        <a href="#" title="Exceptional Aroma.Exceptional Tea"><span>
+                            <img src="data1/tooltips/educationinstitutionalbannerimg.jpg" alt="Exceptional Aroma.Exceptional Tea" />2</span></a>
+                        <a href="#" title="Join the Tea test."><span>
+                            <img src="data1/tooltips/gp14umpreview__copy.jpg" alt="Join the Tea test." />3</span></a>
+                        <a href="#" title="It’s not a Tea ,It’s refreshing burst"><span>
+                            <img src="data1/tooltips/pentagonbusinessgroup43198918975cd15.jpg" alt="It’s not a Tea ,It’s refreshing burst" />4</span></a>
+                    </div>
+                </div>
+                <div class="ws_script" style="position: absolute; left: -99%"><a href="http://wowslider.net">javascript image slider</a> by WOWSlider.com v8.8</div>
+                <div class="ws_shadow"></div>
+            </div>
+            <script type="text/javascript" src="engine1/wowslider.js"></script>
+            <script type="text/javascript" src="engine1/script.js"></script>
+
+            <div>
+                <nav style="background-color: #d35400">
+                    <ul>
+                        <li><a href="Default.aspx" style="color: white; text-decoration: none">Order Chai/Coffee/Milk</a></li>
+                        <li><a href="Chai.aspx" style="color: white; text-decoration: none">About Chai</a></li>
+                        <li><a href="Preparation.aspx" style="color: white; text-decoration: none">Preparation</a></li>
+                        <li><a href="ChaiType.aspx" style="color: white; text-decoration: none">Chai Type</a></li>
+                        <li><a href="WhyUs.aspx" style="color: white; text-decoration: none">Why Us?</a></li>
+                        <li><a href="AboutUs.aspx" style="color: white; text-decoration: none">About Us</a></li>
+                        <li><a href="ContactUs.aspx" style="color: white; text-decoration: none">Contact</a></li>
+                    </ul>
+                    <div class="handle" style="background-color: #533c2c">
+                        <p class="menu">Menu</p>
+                        <div class="menu_icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div style="float: left; width: 100%">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="float: left; width: 100%">
+                <!-- Site footer -->
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-xs-6 col-md-3">
+                                <h6>Quick Links</h6>
+                                <ul class="footer-links">
+                                    <li><a href="Default.aspx">Order Us/a></li>
+                                    <li><a href="AboutUs.aspx">About us</a></li>
+                                    <li><a href="Preparation.aspx">Preparation</a></li>
+                                    <li><a href="ChaiType.aspx">Tea Type</a></li>
+                                    <li><a href="WhyUs.aspx">Why us?</a></li>
+                                    <li><a href="adminlogin.aspx">Admin Login</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <h6>Address</h6>
+                                <p>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>GE-15, City Centre, Sector-4<br />
+                                    Bokaro Steel City, Jharkhand-827004<br />
+                                    Mobile: 700 470 1320<br />
+                                    Email: info@thechaidhaba.com<br />
+                                    Website: www.thechaidhaba.com
+
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+
+                                <table style="margin: auto">
+                                    <tr>
+                                        <td style="color: white;"><strong>ENQUIRY FORM</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:TextBox ID="txtName1" runat="server" class="form-control" placeholder="Your Name" Style="width: 359px; margin-top: 5px;"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:TextBox ID="txtEmail1" runat="server" class="form-control" placeholder="Your Email" Style="width: 359px; margin-top: 5px;"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:TextBox ID="txtQuery1" runat="server" class="form-control" placeholder="Your Query" Style="width: 359px; margin-top: 5px" TextMode="MultiLine"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btnSubmit1" runat="server" Text="Send" class="btn btn-success" Style="width: 359px; margin-top: 5px;" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                <p class="copyright-text">
+                                    Copyright &copy; 2019 The Chai Dhaba | <a href="http://www.cdit.in">Designed by: CDIT infotech</a>
+                                </p>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <ul class="social-icons">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="dribbble" href="#"><i class="fa fa-youtube"></i></a></li>
+                                    <%--<li><a class="linkedin" href="#"><i class="fa fa-youtube"></i></a></li> --%>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </form>
+    <script>
+        $('.handle').on('click', function () {
+            $('nav ul').toggleClass('showing');
+        });
+    </script>
+    <script src="js/jsvivek.js"></script>
+    <script src="js/jsvivek2.js"></script>
+    <script src="js/jsvivek3.js"></script>
+</body>
+</html>
