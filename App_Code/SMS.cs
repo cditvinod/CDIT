@@ -20,7 +20,7 @@ public class SMS
         int retVal = 0;
         try
         {
-            string result = APICall("http://bulksms.cdit.in/rest/services/sendSMS/sendGroupSms?AUTH_KEY=d13c14b91f6fc673ddfeead42c213258&message=" + message + "&senderId=CHAIDB&routeId=1&mobileNos=" + mobileNo + "&smsContentType=english");            
+            string result = APICall("http://bulksms.cdit.in/rest/services/sendSMS/sendGroupSms?AUTH_KEY=#&message=" + message + "&senderId=CHAIDB&routeId=1&mobileNos=" + mobileNo + "&smsContentType=english");            
             if (result.Contains(" incorrect username or password"))
                 retVal = 0;
             else
